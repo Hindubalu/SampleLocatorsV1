@@ -5,78 +5,33 @@
     <title>Account Access</title>
     <style>
         body {
-            background: #f0f2f5;
-            font-family: Verdana, sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 40px;
         }
-
-        .card {
-            width: 380px;
-            margin: 80px auto;
-            background: #ffffff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
-
-        label {
-            font-size: 13px;
-            font-weight: bold;
-            margin-top: 12px;
+        input, button {
             display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 250px;
         }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-
-        .btn-group {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-
         button {
-            width: 48%;
-            padding: 10px;
-            border: none;
+            width: 270px;
             cursor: pointer;
-            border-radius: 4px;
-        }
-
-        .submit-btn {
-            background: #28a745;
-            color: white;
-        }
-
-        .clear-btn {
-            background: #dc3545;
-            color: white;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h3>Login Account</h3>
+    <h2>Account Access</h2>
 
-        <label for="userId">User ID</label>
-        <input type="text" id="userId">
+    <!-- Input fields -->
+    <input type="text" id="accountId" placeholder="Enter Account ID">
+    <input type="email" id="accountEmail" placeholder="Enter Registered Email">
+    <input type="password" id="accountPassword" placeholder="Enter Password">
 
-        <label for="userEmail">Email Address</label>
-        <input type="email" id="userEmail">
-
-        <label for="userPwd">Password</label>
-        <input type="password" id="userPwd">
-
-        <div class="btn-group">
-            <button class="submit-btn">Sign In</button>
-            <button class="clear-btn">Clear</button>
-        </div>
-    </div>
+    <!-- Buttons -->
+    <button id="accessBtn">Access Account</button>
+    <button id="clearBtn">Clear</button>
 
 </body>
 </html>
